@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    color: #444;
+}
+table{
+    margin: 65px auto;
+    background-color: white;
+    box-shadow: 3px 3px 21px rgba(0,0,0, 0.1);
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+th{
+    text-transform: uppercase;
+}
+tbody tr:nth-child(odd){
+    background: whitesmoke;
+}
+tr:not(:last-child){
+    border-bottom: 1px solid rgba(0, 0,0, 0.1)
+}
+
+tbody tr td:nth-child(3){
+    text-align: center;
+}
+tbody tr td:nth-child(4), tbody tr td:nth-child(5){
+    text-align: right;
+}
+tbody tr td:last-child{
+    background-color: #16D6FA;
+    display: inline-block;
+    padding: 3px 5px;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+tbody tr td.not-received{
+    background-color: #F73668;
+}
+tbody tr td.panding{
+    background-color: #FEC603;
+}
+tbody tr td.delivered{
+    background-color: #16D6FA;
+}
+tbody tr td.under_shipping{
+    background-color: #E07A5F;
+}
